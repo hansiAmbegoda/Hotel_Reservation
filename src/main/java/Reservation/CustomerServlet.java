@@ -26,6 +26,7 @@ public class CustomerServlet extends HttpServlet {
 		}
 		catch(Exception e) {
 			e.printStackTrace();
+			
 		}
 		
 		RequestDispatcher disp = request.getRequestDispatcher("account.jsp");
