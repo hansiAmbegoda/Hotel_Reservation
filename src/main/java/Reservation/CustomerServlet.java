@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 public class CustomerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userName = request.getParameter("userName");
 		String email = request.getParameter("email");
@@ -28,10 +27,8 @@ public class CustomerServlet extends HttpServlet {
 			e.printStackTrace();
 			
 		}
-		
 		RequestDispatcher disp = request.getRequestDispatcher("account.jsp");
 		disp.forward(request, response);
-		
 	}
 
 }
